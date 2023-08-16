@@ -27,12 +27,12 @@ let displayitems = () => {
   displayitems();
 
 let addTask = () => {
-    id = 0;
+    let id = 0;
 
     let taskInfo = {
         task : task.value,
         dateInput : dateInput.value,
-        Id : ++id  
+        Id : id + 1 
     }
     if (taskItems == null){
         taskItems = [];
